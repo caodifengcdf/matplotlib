@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'matplotlib_examples.spiders'
 #USER_AGENT = 'matplotlib_examples (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -69,6 +69,7 @@ ITEM_PIPELINES = {
     'scrapy.pipelines.files.FilesPipeline': 1,
 }
 
+FILES_STORE = 'examples_download'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
