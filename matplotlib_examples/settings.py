@@ -9,6 +9,8 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+
+
 BOT_NAME = 'matplotlib_examples'
 
 SPIDER_MODULES = ['matplotlib_examples.spiders']
@@ -66,7 +68,9 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
 #    'matplotlib_examples.pipelines.MatplotlibExamplesPipeline': 300,
-    'scrapy.pipelines.files.FilesPipeline': 1,
+#    'scrapy.pipelines.files.FilesPipeline': 1,
+    'matplotlib_examples.pipelines.MatplotlibExamplesPipeline':1,
+
 }
 
 FILES_STORE = 'examples_download'

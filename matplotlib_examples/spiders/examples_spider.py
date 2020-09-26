@@ -38,7 +38,7 @@ class ExamplesSpiderSpider(scrapy.Spider):
 
         print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
         example = MatplotlibExamplesItem()
-        example['file_urls']= url
+        example['file_urls']= [url]
         return example
 
         
